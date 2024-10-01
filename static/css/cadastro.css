@@ -1,0 +1,134 @@
+/* styles.css */
+
+/* Reset básico para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo do documento */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f7f9fc;
+    padding: 20px;
+    background-image: url('/static/img/fundo-floral-de-design-plano_23-2149252174.avif');
+    background-size: cover; 
+    background-position: center;
+    height: 400px;
+}
+
+/* Estilo para o container Secundario do registro */
+
+.container-p2 {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4%;
+    background-color: #fff; /* Fundo branco como fallback */
+    background-size: cover; /* Para cobrir o elemento com a imagem */
+    background-position: center; /* Centraliza a imagem */
+    border-radius: 25px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Estilo para o container principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4%;
+    background-color: #fff; /* Fundo branco como fallback */
+    background-size: cover; /* Para cobrir o elemento com a imagem */
+    background-position: center; /* Centraliza a imagem */
+    border-radius: 25px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o cabeçalho principal */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Estilo para subtítulos */
+h2 {
+    font-size: 2em;
+    color: #555;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para parágrafos */
+p {
+    margin-bottom: 20px;
+}
+
+/* Estilo para os links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para os itens da lista de postagens */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+li a:hover {
+    color: #007bff;
+}
+
+/* Estilo para os links de logout e outras ações */
+a[href$="logout"], a[href$="criar_postagem"], a[href$="login"], a[href$="cadastro"] {
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+a[href$="logout"]:hover, a[href$="criar_postagem"]:hover, a[href$="login"]:hover, a[href$="cadastro"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para os botões de ação */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,33 @@
+#inputNameLoginPage {
+    padding: 4;
+    border-radius: 8;
+    height: 30px;    
+}
+
+#inputPasswordLoginPage {
+    padding: 4;
+    border-radius: 8;
+    height: 30px;    
+}
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10;
+    margin: 5;
+    border: 1;
+    height: 300px;
+}
+
+#buttonConectLoginPage {
+    height: 30;
+    border-radius: 8;
+    color: white;
+    font-style: bold;
+    background-color: #2df94188;
+}
+
+.container-mb1 {
+    text-align: center;
+}

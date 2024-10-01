@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename = 'css/cadastro.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename = 'css/login.css')}}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-mb1">
+        <h1>Login</h1>
+        <div class="bd-35">
+          <form method="POST" id="form-login">
+            <input
+              type="text"
+              name="nome_usuario"
+              placeholder="Usuário"
+              id="inputNameLoginPage"
+              required
+            />
+            <br>
+            <input type="password" name="senha" placeholder="Senha" required
+            id="inputPasswordLoginPage" />
+            <br>
+            <button type="submit" id="buttonConectLoginPage">Conectar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
