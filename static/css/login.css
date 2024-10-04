@@ -21,13 +21,25 @@
 }
 
 #buttonConectLoginPage {
-    height: 30;
-    border-radius: 8;
-    color: white;
-    font-style: bold;
-    background-color: #2df94188;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .container-mb1 {
-    text-align: center;
+    height: 400px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 6%;
+    background-color: #fff; /* Fundo branco como fallback */
+    background-size: cover; /* Para cobrir o elemento com a imagem */
+    background-position: center; /* Centraliza a imagem */
+    border-radius: 25px;
+    
 }
+

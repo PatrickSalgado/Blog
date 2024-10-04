@@ -9,23 +9,30 @@
 <body>
     <div class='container-p2'>
         <h1>Registro</h1>
-        <div class=".mb_mb-1">
-            <form method="POST">
+        <div class="mb_mb-1">
+            <form method="POST" id="form-register">
                 <input type="text" name="nome_usuario" placeholder="Nome" required>
-                <input type="password" name="senha" placeholder="Nova Senha" required>
+                <br>             
                 <input type="email" name="email_usuario" placeholder="Email" required>
-                <label>Gênero:</label>
+                <br>
+                <input type="password" name="senha" placeholder="Senha" required>
+                <br>
+                <label>Gênero:
+                    <br>
+                    <br>
                     <input type="radio" id="masculino" name="genero_usuario" value="Masculino" required>
                     <label for="masculino">Masculino</label>
-
+                    <br>
                     <input type="radio" id="feminino" name="genero_usuario" value="Feminino">
                     <label for="feminino">Feminino</label>
-
+                    <br>
                     <input type="radio" id="personalizado" name="genero_usuario" value="Personalizado">
-                    <label for="personalizado">Personalizado</label>
-                
-
-                <button type="submit">Cadastrar</button>
+                    <label for="personalizado">Personalizado</label>    
+                </label>
+                <br>
+                <button type="submit" id="cadastrar">Cadastrar</button>
+                <br>
+                <a href="/"><img src="/static/img/casa.png" alt="png"></a>
             </form>
         </div>
     </div>

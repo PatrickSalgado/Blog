@@ -4,22 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for ('static', filename = 'css/cadastro.css')}}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename = 'css/style.css')}}">
     <title>Blog</title>
 </head>
 <body>
 <div class="imag">
     <div class="container">
+        
+        <div class="box_buttons">
         <h1>Blog</h1>
         {% if 'usuario_id' in session %}
             <p>Logado como {{ session['nome_usuario'] }}</p>
             <a href="{{ url_for('logout') }}">Sair</a>
             <a href="{{ url_for('criar_postagem') }}">Criar postagem</a>
         {% else %}
-            <a href="{{ url_for('login') }}">Conectar</a>
-            <a href="{{ url_for('cadastro') }}">Registrar</a>
+            <a href="{{ url_for('login') }}" id="conectar-button">Entrar</a>
+            <a href="{{ url_for('cadastro') }}">Inscreva-se</a>
         {% endif %}
-    
+        </div>
+       
 
         <h2>Postagens</h2>
         <ul>
